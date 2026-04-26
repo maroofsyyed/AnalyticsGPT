@@ -1,0 +1,52 @@
+{
+  "name": "cards-analytics-gpt",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "CardsAnalyticsGPT — QueryGPT for TPC-DS Dataset with Sarvam AI",
+  "main": "index.ts",
+  "scripts": {
+    "start": "tsx index.ts",
+    "dev": "tsx --watch index.ts",
+    "ui": "tsx server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/FarabiInnovations/querygpt.git"
+  },
+  "keywords": [
+    "AI",
+    "LLM",
+    "Application",
+    "QueryGPT",
+    "SQL",
+    "TPC-DS",
+    "Sarvam",
+    "Databricks"
+  ],
+  "author": "Maroof Akhtar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FarabiInnovations/querygpt/issues"
+  },
+  "homepage": "https://github.com/FarabiInnovations/querygpt#readme",
+  "dependencies": {
+    "@langchain/core": "^0.3.42",
+    "@langchain/langgraph": "^0.2.55",
+    "@langchain/openai": "^0.4.4",
+    "cors": "^2.8.6",
+    "csv-parse": "^5.5.6",
+    "dotenv": "^16.4.7",
+    "express": "^5.2.1",
+    "uuid": "^9.0.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.10.5",
+    "@types/uuid": "^9.0.8",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}

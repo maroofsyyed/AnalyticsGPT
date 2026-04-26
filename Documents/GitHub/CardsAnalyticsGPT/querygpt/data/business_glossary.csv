@@ -1,0 +1,204 @@
+business_meaning,column_name,table_name
+Date of sale → date_dim,ss_sold_date_sk,store_sales
+Time of sale in seconds → time_dim,ss_sold_time_sk,store_sales
+Item sold → item,ss_item_sk,store_sales
+Buyer → customer (null if anonymous),ss_customer_sk,store_sales
+Customer demographic profile → customer_demographics,ss_cdemo_sk,store_sales
+Household demographics → household_demographics,ss_hdemo_sk,store_sales
+Customer address at purchase time → customer_address,ss_addr_sk,store_sales
+Store where sold → store,ss_store_sk,store_sales
+Promotion applied (nullable) → promotion,ss_promo_sk,store_sales
+Receipt/basket ID — groups all items in one trip,ss_ticket_number,store_sales
+Units purchased,ss_quantity,store_sales
+Cost to the store,ss_wholesale_cost,store_sales
+Full retail price before discount,ss_list_price,store_sales
+Actual price paid after discount,ss_sales_price,store_sales
+Total discount = (list-sales) × qty,ss_ext_discount_amt,store_sales
+Total revenue = sales_price × qty,ss_ext_sales_price,store_sales
+Total cost = wholesale_cost × qty,ss_ext_wholesale_cost,store_sales
+Total list = list_price × qty,ss_ext_list_price,store_sales
+Tax on this line item,ss_ext_tax,store_sales
+Coupon discount applied,ss_coupon_amt,store_sales
+Amount paid = ext_sales_price - coupon,ss_net_paid,store_sales
+Net paid including tax,ss_net_paid_inc_tax,store_sales
+Profit = net_paid - ext_wholesale_cost,ss_net_profit,store_sales
+Groups items in one web order (≈ ss_ticket_number),ws_order_number,web_sales
+Customer who placed the order,ws_bill_customer_sk,web_sales
+Customer who receives shipment (may differ),ws_ship_customer_sk,web_sales
+Billing address,ws_bill_addr_sk,web_sales
+Shipping address,ws_ship_addr_sk,web_sales
+Date shipped (may differ from sold date),ws_ship_date_sk,web_sales
+Web page where ordered → web_page,ws_web_page_sk,web_sales
+Website that processed order → web_site,ws_web_site_sk,web_sales
+Warehouse that fulfilled → warehouse,ws_warehouse_sk,web_sales
+Shipping method → ship_mode,ws_ship_mode_sk,web_sales
+Amount paid,ws_net_paid,web_sales
+Profit on this line,ws_net_profit,web_sales
+Groups items in one catalog order,cs_order_number,catalog_sales
+Call center that handled order → call_center,cs_call_center_sk,catalog_sales
+Catalog page advertising the item → catalog_page,cs_catalog_page_sk,catalog_sales
+Shipping method → ship_mode,cs_ship_mode_sk,catalog_sales
+Fulfilling warehouse → warehouse,cs_warehouse_sk,catalog_sales
+Amount paid,cs_net_paid,catalog_sales
+Profit,cs_net_profit,catalog_sales
+Return date → date_dim,sr_returned_date_sk,store_returns
+Returned item → item,sr_item_sk,store_returns
+Original ticket number (join to store_sales),sr_ticket_number,store_returns
+Return reason → reason,sr_reason_sk,store_returns
+Refund amount,sr_return_amt,store_returns
+Tax refunded,sr_return_tax,store_returns
+Net loss from return,sr_net_loss,store_returns
+Customer getting refund,wr_refunded_customer_sk,web_returns
+Customer physically returning (may differ),wr_returning_customer_sk,web_returns
+Return reason → reason,wr_reason_sk,web_returns
+Refund amount,wr_return_amt,web_returns
+Customer getting refund,cr_refunded_customer_sk,catalog_returns
+Call center handling return,cr_call_center_sk,catalog_returns
+Return reason → reason,cr_reason_sk,catalog_returns
+Refund amount,cr_return_amount,catalog_returns
+Snapshot week → date_dim,inv_date_sk,inventory
+Item → item,inv_item_sk,inventory
+Warehouse → warehouse,inv_warehouse_sk,inventory
+Units in stock at end of week,inv_quantity_on_hand,inventory
+Surrogate key used in all fact table date FKs,d_date_sk,date_dim
+Actual calendar date YYYY-MM-DD,d_date,date_dim
+Calendar year,d_year,date_dim
+Month of year 1-12,d_moy,date_dim
+Day of month,d_dom,date_dim
+Day of week 0=Sunday,d_dow,date_dim
+Quarter of year 1-4,d_qoy,date_dim
+Fiscal year,d_fy_year,date_dim
+Fiscal quarter sequence,d_fy_quarter_seq,date_dim
+Fiscal week sequence,d_fy_week_seq,date_dim
+Y if public holiday,d_holiday,date_dim
+Y if Saturday or Sunday,d_weekend,date_dim
+Y if day before a holiday,d_following_holiday,date_dim
+Same day last year (sk) — used for YoY comparisons,d_same_day_ly,date_dim
+Same day last quarter (sk),d_same_day_lq,date_dim
+Surrogate key,t_time_sk,time_dim
+Seconds since midnight,t_time,time_dim
+Hour 0-23,t_hour,time_dim
+Minute 0-59,t_minute,time_dim
+Second 0-59,t_second,time_dim
+AM or PM,t_am_pm,time_dim
+Work shift: Morning/Evening/Night,t_shift,time_dim
+Sub-shift: Early/Mid/Late,t_sub_shift,time_dim
+Breakfast/Lunch/Dinner (nullable),t_meal_time,time_dim
+Natural business key (string),c_customer_id,customer
+Mr/Mrs/Ms/Dr etc,c_salutation,customer
+First name,c_first_name,customer
+Last name,c_last_name,customer
+Year of birth,c_birth_year,customer
+Month of birth,c_birth_month,customer
+Day of birth,c_birth_day,customer
+Email address,c_email_address,customer
+Last product review date sk,c_last_review_date,customer
+Natural business key,i_item_id,item
+Long text description,i_item_desc,item
+Current selling price,i_current_price,item
+Current cost to the business,i_wholesale_cost,item
+Brand identifier,i_brand_id,item
+Brand name,i_brand,item
+Product class id,i_class_id,item
+Product class e.g. electronics furniture,i_class,item
+Category id,i_category_id,item
+High-level category,i_category,item
+Manufacturer id,i_manufact_id,item
+Manufacturer name,i_manufact,item
+Size descriptor,i_size,item
+Color,i_color,item
+Unit of measure,i_units,item
+Packaging type,i_container,item
+Product manager id,i_manager_id,item
+Short product name,i_product_name,item
+Natural business key,s_store_id,store
+Store brand name,s_store_name,store
+Staff headcount,s_number_employees,store
+Floor area sq ft,s_floor_space,store
+Operating hours,s_hours,store
+Store manager name,s_manager,store
+Market territory id,s_market_id,store
+Urban/Suburban/Rural,s_geography_class,store
+City,s_city,store
+US state abbreviation,s_state,store
+ZIP code,s_zip,store
+Timezone offset from GMT,s_gmt_offset,store
+Local tax rate (misspelled in source),s_tax_precentage,store
+Surrogate key,cd_demo_sk,customer_demographics
+M or F,cd_gender,customer_demographics
+S=Single M=Married D=Divorced W=Widowed U=Unknown,cd_marital_status,customer_demographics
+Primary/Secondary/College/Advanced Degree/Unknown,cd_education_status,customer_demographics
+Estimated annual purchase amount $,cd_purchase_estimate,customer_demographics
+Good/High Risk/Low Risk/Unknown,cd_credit_rating,customer_demographics
+Number of dependents,cd_dep_count,customer_demographics
+Employed dependents,cd_dep_employed_count,customer_demographics
+Dependents in college,cd_dep_college_count,customer_demographics
+Surrogate key,ca_address_sk,customer_address
+Natural business key,ca_address_id,customer_address
+City,ca_city,customer_address
+County,ca_county,customer_address
+State,ca_state,customer_address
+ZIP code,ca_zip,customer_address
+Country,ca_country,customer_address
+Timezone,ca_gmt_offset,customer_address
+Condo/House/Unknown,ca_location_type,customer_address
+Surrogate key,hd_demo_sk,household_demographics
+FK → income_band,hd_income_band_sk,household_demographics
+0-500/501-1000/1001-5000/5001-10000/10001-20000/Unknown,hd_buy_potential,household_demographics
+Dependents in household,hd_dep_count,household_demographics
+Vehicles owned,hd_vehicle_count,household_demographics
+Surrogate key,ib_income_band_sk,income_band
+Lower income bound $,ib_lower_bound,income_band
+Upper income bound $,ib_upper_bound,income_band
+Natural business key,p_promo_id,promotion
+Promotion display name,p_promo_name,promotion
+Y if direct mail,p_channel_dmail,promotion
+Y if email,p_channel_email,promotion
+Y if catalog,p_channel_catalog,promotion
+Y if TV,p_channel_tv,promotion
+Y if radio,p_channel_radio,promotion
+Y if print/press,p_channel_press,promotion
+Y if in-person event,p_channel_event,promotion
+Unknown/Cross-Sell/Upsell,p_purpose,promotion
+Y if discount currently active,p_discount_active,promotion
+Natural business key,w_warehouse_id,warehouse
+Warehouse name,w_warehouse_name,warehouse
+Floor size sq ft,w_warehouse_sq_ft,warehouse
+City,w_city,warehouse
+State,w_state,warehouse
+ZIP,w_zip,warehouse
+Country,w_country,warehouse
+Timezone offset,w_gmt_offset,warehouse
+Surrogate key,sm_ship_mode_sk,ship_mode
+Express/Standard/Two-Day/Library/Overnight/Next Day Air,sm_type,ship_mode
+Carrier name e.g. DHL UPS,sm_carrier,ship_mode
+Contract reference,sm_contract,ship_mode
+Surrogate key,r_reason_sk,reason
+Natural key,r_reason_id,reason
+Plain text e.g. Did not fit / Defective product,r_reason_desc,reason
+Natural key,cc_call_center_id,call_center
+Center name,cc_name,call_center
+Number of employees,cc_employees,call_center
+Operating hours,cc_hours,call_center
+Manager name,cc_manager,call_center
+Market classification,cc_mkt_class,call_center
+Natural key,cp_catalog_page_id,catalog_page
+Validity start → date_dim,cp_start_date_sk,catalog_page
+Validity end → date_dim,cp_end_date_sk,catalog_page
+Department this page belongs to,cp_department,catalog_page
+Which catalog issue,cp_catalog_number,catalog_page
+Page number in catalog,cp_catalog_page_number,catalog_page
+Natural key,wp_web_page_id,web_page
+When page was created → date_dim,wp_creation_date_sk,web_page
+welcome/dynamic/order/feedback etc,wp_type,web_page
+Full URL,wp_url,web_page
+Character count of page content,wp_char_count,web_page
+Links on page,wp_link_count,web_page
+Images on page,wp_image_count,web_page
+Natural key,web_site_id,web_site
+Website name,web_name,web_site
+Launch date → date_dim,web_open_date_sk,web_site
+Website tier,web_class,web_site
+Manager name,web_manager,web_site
+Legal company name,web_company_name,web_site
+Tax rate for this site region,web_tax_percentage,web_site

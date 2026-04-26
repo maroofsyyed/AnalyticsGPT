@@ -1,0 +1,427 @@
+column_name,data_type,distinct_count,null_pct,sample_values,table_name,table_row_count
+cc_call_center_sk,IntegerType(),6,0.0,"['1', '2', '3', '4', '5']",call_center,6
+cc_call_center_id,StringType(),3,0.0,"['AAAAAAAABAAAAAAA', 'AAAAAAAACAAAAAAA', 'AAAAAAAAEAAAAAAA']",call_center,6
+cc_rec_start_date,DateType(),4,0.0,"['1998-01-01', '2001-01-01', '2000-01-02', '2002-01-01']",call_center,6
+cc_rec_end_date,DateType(),4,50.0,"['2000-12-31', '2000-01-01', '2001-12-31']",call_center,6
+cc_closed_date_sk,IntegerType(),1,100.0,[],call_center,6
+cc_open_date_sk,IntegerType(),3,0.0,"['2450997', '2450876', '2450872']",call_center,6
+cc_name,StringType(),3,0.0,"['NY Metro', 'Mid Atlantic', 'North Midwest']",call_center,6
+cc_class,StringType(),3,0.0,"['large', 'small', 'medium']",call_center,6
+cc_employees,IntegerType(),3,0.0,"['1', '3', '6']",call_center,6
+cc_sq_ft,IntegerType(),3,0.0,"['591', '199', '1638']",call_center,6
+cc_hours,StringType(),2,0.0,"['8AM-12AM', '8AM-4PM']",call_center,6
+cc_manager,StringType(),5,0.0,"['Keith Cunningham', 'Stephen Clem', 'William Johnson', 'Lamont Greene', 'Emilio Romano']",call_center,6
+cc_mkt_id,IntegerType(),3,0.0,"['4', '3', '6']",call_center,6
+cc_mkt_class,StringType(),4,0.0,"['Matters may hear as; profita', 'Classes devote largely other, standard ter', 'Events must find anyway ', 'As well novel sentences check through the plans.']",call_center,6
+cc_mkt_desc,StringType(),6,0.0,"['New, cold plants can put al', 'Free germans prove flatly industrial drugs. Low questions come to a equations. British, conservative', 'Ridiculous requirements must not implement about pure values. Substances know powers. Political rel', 'Great rates must ensure famous, other banks. As main goals get home as a ', 'So fresh supplies keep meanwhile religious, labour years. Rapid, careful subject']",call_center,6
+cc_market_manager,StringType(),6,0.0,"['Dante Cook', 'Christopher Perez', 'Derrick Burke', 'Marvin Dean', 'Matthew Williams']",call_center,6
+cc_division,IntegerType(),4,0.0,"['3', '6', '2', '5']",call_center,6
+cc_division_name,StringType(),4,0.0,"['pri', 'cally', 'able', 'anti']",call_center,6
+cc_company,IntegerType(),4,0.0,"['4', '3', '2', '1']",call_center,6
+cc_company_name,StringType(),3,0.0,"['ese', 'pri', 'able']",call_center,6
+cc_street_number,StringType(),3,0.0,"['995', '245', '927']",call_center,6
+cc_street_name,StringType(),3,0.0,"['Park 3rd', 'Johnson ', 'Oak Main']",call_center,6
+cc_street_type,StringType(),3,0.0,"['Dr.', 'Circle', 'ST']",call_center,6
+cc_suite_number,StringType(),3,0.0,"['Suite 470', 'Suite 200', 'Suite 150']",call_center,6
+cc_city,StringType(),1,0.0,['Fairview'],call_center,6
+cc_county,StringType(),1,0.0,['Williamson County'],call_center,6
+cc_state,StringType(),1,0.0,['TN'],call_center,6
+cc_zip,StringType(),1,0.0,['35709'],call_center,6
+cc_country,StringType(),1,0.0,['United States'],call_center,6
+cc_gmt_offset,"DecimalType(5,2)",1,0.0,['-5.00'],call_center,6
+cc_tax_percentage,"DecimalType(5,2)",4,0.0,"['0.02', '0.03', '0.00', '0.07']",call_center,6
+cp_catalog_page_sk,IntegerType(),11718,0.0,[],catalog_page,11718
+cp_catalog_page_id,StringType(),11718,0.0,"['AAAAAAAABAAAAAAA', 'AAAAAAAACAAAAAAA', 'AAAAAAAADAAAAAAA', 'AAAAAAAAEAAAAAAA', 'AAAAAAAAFAAAAAAA']",catalog_page,11718
+cp_start_date_sk,IntegerType(),92,0.93,[],catalog_page,11718
+cp_end_date_sk,IntegerType(),98,0.87,[],catalog_page,11718
+cp_department,StringType(),2,0.89,['DEPARTMENT'],catalog_page,11718
+cp_catalog_number,IntegerType(),110,0.84,[],catalog_page,11718
+cp_catalog_page_number,IntegerType(),109,0.97,[],catalog_page,11718
+cp_description,StringType(),11617,0.87,"['Democratic jobs would not let small, different names. Voluntary, very condit', 'Now legal movements should exchange long as the bodies. Effects li', 'Political feet could make backwards to a affairs. Political tourists must become in', 'Workers devise however days; readers recover a little on a stand', 'Red, high periods ought to enter political words. Pr']",catalog_page,11718
+cp_type,StringType(),4,0.79,"['bi-annual', 'quarterly', 'monthly']",catalog_page,11718
+cr_returned_date_sk,IntegerType(),2066,0.0,[],catalog_returns,143672
+cr_returned_time_sk,IntegerType(),64772,0.0,[],catalog_returns,143672
+cr_item_sk,IntegerType(),17871,0.0,[],catalog_returns,143672
+cr_refunded_customer_sk,IntegerType(),60719,1.97,[],catalog_returns,143672
+cr_refunded_cdemo_sk,IntegerType(),90778,2.03,[],catalog_returns,143672
+cr_refunded_hdemo_sk,IntegerType(),7201,1.99,[],catalog_returns,143672
+cr_refunded_addr_sk,IntegerType(),42191,2.01,[],catalog_returns,143672
+cr_returning_customer_sk,IntegerType(),75541,1.98,[],catalog_returns,143672
+cr_returning_cdemo_sk,IntegerType(),135239,2.01,[],catalog_returns,143672
+cr_returning_hdemo_sk,IntegerType(),7201,2.0,[],catalog_returns,143672
+cr_returning_addr_sk,IntegerType(),46889,2.0,[],catalog_returns,143672
+cr_call_center_sk,IntegerType(),7,2.04,"['6', '3', '2', '4', '5']",catalog_returns,143672
+cr_catalog_page_sk,IntegerType(),6540,1.99,[],catalog_returns,143672
+cr_ship_mode_sk,IntegerType(),21,1.94,"['14', '18', '6', '3', '7']",catalog_returns,143672
+cr_warehouse_sk,IntegerType(),6,2.04,"['3', '2', '4', '5', '1']",catalog_returns,143672
+cr_reason_sk,IntegerType(),36,1.99,"['14', '18', '31', '7', '3']",catalog_returns,143672
+cr_order_number,LongType(),94207,0.0,[],catalog_returns,143672
+cr_return_quantity,IntegerType(),101,1.98,[],catalog_returns,143672
+cr_return_amount,"DecimalType(7,2)",82075,2.02,[],catalog_returns,143672
+cr_return_tax,"DecimalType(7,2)",25946,2.0,[],catalog_returns,143672
+cr_return_amt_inc_tax,"DecimalType(7,2)",96226,2.01,[],catalog_returns,143672
+cr_fee,"DecimalType(7,2)",9952,1.97,[],catalog_returns,143672
+cr_return_ship_cost,"DecimalType(7,2)",64359,1.98,[],catalog_returns,143672
+cr_refunded_cash,"DecimalType(7,2)",73576,2.01,[],catalog_returns,143672
+cr_reversed_charge,"DecimalType(7,2)",54940,1.99,[],catalog_returns,143672
+cr_store_credit,"DecimalType(7,2)",54301,2.02,[],catalog_returns,143672
+cr_net_loss,"DecimalType(7,2)",86775,1.96,[],catalog_returns,143672
+cs_sold_date_sk,IntegerType(),1831,0.5,[],catalog_sales,1439935
+cs_sold_time_sk,IntegerType(),67578,0.5,[],catalog_sales,1439935
+cs_ship_date_sk,IntegerType(),1923,0.5,[],catalog_sales,1439935
+cs_bill_customer_sk,IntegerType(),79851,0.5,[],catalog_sales,1439935
+cs_bill_cdemo_sk,IntegerType(),153560,0.5,[],catalog_sales,1439935
+cs_bill_hdemo_sk,IntegerType(),7201,0.5,[],catalog_sales,1439935
+cs_bill_addr_sk,IntegerType(),47983,0.51,[],catalog_sales,1439935
+cs_ship_customer_sk,IntegerType(),79852,0.5,[],catalog_sales,1439935
+cs_ship_cdemo_sk,IntegerType(),153580,0.51,[],catalog_sales,1439935
+cs_ship_hdemo_sk,IntegerType(),7201,0.5,[],catalog_sales,1439935
+cs_ship_addr_sk,IntegerType(),47974,0.5,[],catalog_sales,1439935
+cs_call_center_sk,IntegerType(),7,0.5,"['1', '4', '5', '3', '2']",catalog_sales,1439935
+cs_catalog_page_sk,IntegerType(),6589,0.51,[],catalog_sales,1439935
+cs_ship_mode_sk,IntegerType(),21,0.51,"['17', '8', '1', '16', '9']",catalog_sales,1439935
+cs_warehouse_sk,IntegerType(),6,0.5,"['1', '4', '5', '3', '2']",catalog_sales,1439935
+cs_item_sk,IntegerType(),18000,0.0,[],catalog_sales,1439935
+cs_promo_sk,IntegerType(),301,0.5,[],catalog_sales,1439935
+cs_order_number,LongType(),160000,0.0,[],catalog_sales,1439935
+cs_quantity,IntegerType(),101,0.51,[],catalog_sales,1439935
+cs_wholesale_cost,"DecimalType(7,2)",9902,0.5,[],catalog_sales,1439935
+cs_list_price,"DecimalType(7,2)",29445,0.51,[],catalog_sales,1439935
+cs_sales_price,"DecimalType(7,2)",26101,0.5,[],catalog_sales,1439935
+cs_ext_discount_amt,"DecimalType(7,2)",392839,0.5,[],catalog_sales,1439935
+cs_ext_sales_price,"DecimalType(7,2)",392865,0.51,[],catalog_sales,1439935
+cs_ext_wholesale_cost,"DecimalType(7,2)",342003,0.5,[],catalog_sales,1439935
+cs_ext_list_price,"DecimalType(7,2)",558685,0.51,[],catalog_sales,1439935
+cs_ext_tax,"DecimalType(7,2)",84958,0.5,[],catalog_sales,1439935
+cs_coupon_amt,"DecimalType(7,2)",156949,0.5,[],catalog_sales,1439935
+cs_ext_ship_cost,"DecimalType(7,2)",258657,0.51,[],catalog_sales,1439935
+cs_net_paid,"DecimalType(7,2)",423319,0.5,[],catalog_sales,1439935
+cs_net_paid_inc_tax,"DecimalType(7,2)",539210,0.5,[],catalog_sales,1439935
+cs_net_paid_inc_ship,"DecimalType(7,2)",544276,0.0,[],catalog_sales,1439935
+cs_net_paid_inc_ship_tax,"DecimalType(7,2)",700302,0.0,[],catalog_sales,1439935
+cs_net_profit,"DecimalType(7,2)",491880,0.0,[],catalog_sales,1439935
+c_customer_sk,IntegerType(),100000,0.0,[],customer,100000
+c_customer_id,StringType(),100000,0.0,"['AAAAAAAABAAAAAAA', 'AAAAAAAACAAAAAAA', 'AAAAAAAADAAAAAAA', 'AAAAAAAAEAAAAAAA', 'AAAAAAAAFAAAAAAA']",customer,100000
+c_current_cdemo_sk,IntegerType(),94162,3.53,[],customer,100000
+c_current_hdemo_sk,IntegerType(),7201,3.52,[],customer,100000
+c_current_addr_sk,IntegerType(),43249,0.0,[],customer,100000
+c_first_shipto_date_sk,IntegerType(),3652,3.49,[],customer,100000
+c_first_sales_date_sk,IntegerType(),3652,3.45,[],customer,100000
+c_salutation,StringType(),7,3.54,"['Mrs.', 'Dr.', 'Ms.', 'Sir', 'Mr.']",customer,100000
+c_first_name,StringType(),4052,3.53,"['Colleen', 'Sara', 'Gregory', 'Rita', 'Kathryn']",customer,100000
+c_last_name,StringType(),4978,3.56,"['Parker', 'Long', 'Mansfield', 'Barlow', 'Mckinnon']",customer,100000
+c_preferred_cust_flag,StringType(),3,3.49,"['N', 'Y']",customer,100000
+c_birth_day,IntegerType(),32,3.5,"['12', '3', '20', '16', '30']",customer,100000
+c_birth_month,IntegerType(),13,3.55,"['3', '2', '5', '7', '11']",customer,100000
+c_birth_year,IntegerType(),70,3.47,[],customer,100000
+c_birth_country,StringType(),212,3.54,"['VENEZUELA', 'LIBERIA', 'MARSHALL ISLANDS', 'ETHIOPIA', 'KAZAKHSTAN']",customer,100000
+c_login,StringType(),1,100.0,[],customer,100000
+c_email_address,StringType(),96419,3.58,"['Colleen.Parker@KehNc1.edu', 'Sara.Long@nR0nDPVhhb.org', 'Gregory.Mansfield@XZjIqLVc1ALqqX.org', 'Rita.Barlow@0V819.org', 'Kathryn.Mckinnon@G2RI.edu']",customer,100000
+c_last_review_date_sk,IntegerType(),367,3.52,[],customer,100000
+c_last_review_date,IntegerType(),367,3.52,[],customer,100000
+ca_address_sk,IntegerType(),50000,0.0,[],customer_address,50000
+ca_address_id,StringType(),50000,0.0,"['AAAAAAAABAAAAAAA', 'AAAAAAAACAAAAAAA', 'AAAAAAAADAAAAAAA', 'AAAAAAAAEAAAAAAA', 'AAAAAAAAFAAAAAAA']",customer_address,50000
+ca_street_number,StringType(),1001,3.07,"['283', '420', '269', '204', '851']",customer_address,50000
+ca_street_name,StringType(),6922,3.03,"['Main Willow', '5th West', 'Center ', '2nd Spruce', 'Sycamore ']",customer_address,50000
+ca_street_type,StringType(),21,3.03,"['Ln', 'Lane', 'Dr.', 'Way', 'Parkway']",customer_address,50000
+ca_suite_number,StringType(),76,3.1,"['Suite Y', 'Suite 180', 'Suite D', 'Suite B', 'Suite 250']",customer_address,50000
+ca_city,StringType(),703,2.99,"['Maple Grove', 'Springfield', 'Hopewell', 'Mountain View', 'Oak Hill']",customer_address,50000
+ca_county,StringType(),1847,3.0,"['Lamb County', 'Clark County', 'Strafford County', 'Putnam County', 'Randolph County']",customer_address,50000
+ca_state,StringType(),52,3.12,"['TX', 'IN', 'NH', 'OH', 'MN']",customer_address,50000
+ca_zip,StringType(),3702,3.03,"['78252', '49303', '01187', '44466', '47838']",customer_address,50000
+ca_country,StringType(),2,3.07,['United States'],customer_address,50000
+ca_gmt_offset,"DecimalType(5,2)",7,3.09,"['-6.00', '-5.00', '-8.00', '-7.00', '-10.00']",customer_address,50000
+ca_location_type,StringType(),4,3.01,"['condo', 'apartment', 'single family']",customer_address,50000
+cd_demo_sk,IntegerType(),1920800,0.0,[],customer_demographics,1920800
+cd_gender,StringType(),2,0.0,"['M', 'F']",customer_demographics,1920800
+cd_marital_status,StringType(),5,0.0,"['M', 'S', 'D', 'W', 'U']",customer_demographics,1920800
+cd_education_status,StringType(),7,0.0,"['Primary', 'Secondary', 'College', '2 yr Degree', '4 yr Degree']",customer_demographics,1920800
+cd_purchase_estimate,IntegerType(),20,0.0,"['500', '1000', '1500', '2000', '2500']",customer_demographics,1920800
+cd_credit_rating,StringType(),4,0.0,"['Good', 'Low Risk', 'High Risk', 'Unknown']",customer_demographics,1920800
+cd_dep_count,IntegerType(),7,0.0,"['0', '1', '2', '3', '4']",customer_demographics,1920800
+cd_dep_employed_count,IntegerType(),7,0.0,"['0', '1', '2', '3', '4']",customer_demographics,1920800
+cd_dep_college_count,IntegerType(),7,0.0,"['0', '1', '2', '3', '4']",customer_demographics,1920800
+d_date_sk,IntegerType(),73049,0.0,[],date_dim,73049
+d_date_id,StringType(),73049,0.0,"['AAAAAAAAOKJNECAA', 'AAAAAAAAPKJNECAA', 'AAAAAAAAALJNECAA', 'AAAAAAAABLJNECAA', 'AAAAAAAACLJNECAA']",date_dim,73049
+d_date,DateType(),73049,0.0,[],date_dim,73049
+d_month_seq,IntegerType(),2401,0.0,[],date_dim,73049
+d_week_seq,IntegerType(),10436,0.0,[],date_dim,73049
+d_quarter_seq,IntegerType(),801,0.0,[],date_dim,73049
+d_year,IntegerType(),201,0.0,[],date_dim,73049
+d_dow,IntegerType(),7,0.0,"['1', '2', '3', '4', '5']",date_dim,73049
+d_moy,IntegerType(),12,0.0,"['1', '2', '3', '4', '5']",date_dim,73049
+d_dom,IntegerType(),31,0.0,"['2', '3', '4', '5', '6']",date_dim,73049
+d_qoy,IntegerType(),4,0.0,"['1', '2', '3', '4']",date_dim,73049
+d_fy_year,IntegerType(),201,0.0,[],date_dim,73049
+d_fy_quarter_seq,IntegerType(),801,0.0,[],date_dim,73049
+d_fy_week_seq,IntegerType(),10436,0.0,[],date_dim,73049
+d_day_name,StringType(),7,0.0,"['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']",date_dim,73049
+d_quarter_name,StringType(),801,0.0,"['1900Q1', '1900Q2', '1900Q3', '1900Q4', '1901Q1']",date_dim,73049
+d_holiday,StringType(),2,0.0,"['N', 'Y']",date_dim,73049
+d_weekend,StringType(),2,0.0,"['N', 'Y']",date_dim,73049
+d_following_holiday,StringType(),2,0.0,"['Y', 'N']",date_dim,73049
+d_first_dom,IntegerType(),2401,0.0,[],date_dim,73049
+d_last_dom,IntegerType(),2401,0.0,[],date_dim,73049
+d_same_day_ly,IntegerType(),73000,0.0,[],date_dim,73049
+d_same_day_lq,IntegerType(),72698,0.0,[],date_dim,73049
+d_current_day,StringType(),1,0.0,['N'],date_dim,73049
+d_current_week,StringType(),1,0.0,['N'],date_dim,73049
+d_current_month,StringType(),2,0.0,"['N', 'Y']",date_dim,73049
+d_current_quarter,StringType(),2,0.0,"['N', 'Y']",date_dim,73049
+d_current_year,StringType(),2,0.0,"['N', 'Y']",date_dim,73049
+hd_demo_sk,IntegerType(),7200,0.0,[],household_demographics,7200
+hd_income_band_sk,IntegerType(),20,0.0,"['2', '3', '4', '5', '6']",household_demographics,7200
+hd_buy_potential,StringType(),6,0.0,"['0-500', '501-1000', '1001-5000', '5001-10000', '>10000']",household_demographics,7200
+hd_dep_count,IntegerType(),10,0.0,"['0', '1', '2', '3', '4']",household_demographics,7200
+hd_vehicle_count,IntegerType(),6,0.0,"['0', '1', '2', '3', '4']",household_demographics,7200
+ib_income_band_sk,IntegerType(),20,0.0,"['1', '2', '3', '4', '5']",income_band,20
+ib_lower_bound,IntegerType(),20,0.0,"['0', '10001', '20001', '30001', '40001']",income_band,20
+ib_upper_bound,IntegerType(),20,0.0,"['10000', '20000', '30000', '40000', '50000']",income_band,20
+inv_date_sk,IntegerType(),261,0.0,[],inventory,11745000
+inv_item_sk,IntegerType(),18000,0.0,[],inventory,11745000
+inv_warehouse_sk,IntegerType(),5,0.0,"['5', '4', '1', '3', '2']",inventory,11745000
+inv_quantity_on_hand,IntegerType(),1002,5.0,[],inventory,11745000
+i_item_sk,IntegerType(),18000,0.0,[],item,18000
+i_item_id,StringType(),9000,0.0,"['AAAAAAAABAAAAAAA', 'AAAAAAAACAAAAAAA', 'AAAAAAAAEAAAAAAA', 'AAAAAAAAHAAAAAAA', 'AAAAAAAAIAAAAAAA']",item,18000
+i_rec_start_date,DateType(),5,0.3,"['1997-10-27', '2000-10-27', '1999-10-28', '2001-10-27']",item,18000
+i_rec_end_date,DateType(),4,50.0,"['2000-10-26', '1999-10-27', '2001-10-26']",item,18000
+i_item_desc,StringType(),13436,0.27,"['Agricultural sites will not provide skills. Again', 'New, strong ', 'Absolute', 'Miles show only. Areas could stop british, local approaches. Ready ', 'Sections would not want in a blocks. Elaborate days would not trip ancient mountains. Normal rules cannot happen long ']",item,18000
+i_current_price,"DecimalType(7,2)",2583,0.27,[],item,18000
+i_wholesale_cost,"DecimalType(7,2)",1967,0.29,[],item,18000
+i_brand_id,IntegerType(),952,0.32,[],item,18000
+i_brand,StringType(),713,0.35,"['exportibrand #2', 'importounivamalg #3', 'importoedu pack #2', 'exportiimporto #1', 'namelesscorp #6']",item,18000
+i_class_id,IntegerType(),17,0.32,"['3', '2', '4', '12', '8']",item,18000
+i_class,StringType(),100,0.29,"['kids', 'camcorders', 'mens', 'pants', 'mens watch']",item,18000
+i_category_id,IntegerType(),11,0.25,"['7', '10', '4', '2', '6']",item,18000
+i_category,StringType(),11,0.29,"['Home', 'Electronics', 'Shoes', 'Men', 'Jewelry']",item,18000
+i_manufact_id,IntegerType(),993,0.29,[],item,18000
+i_manufact,StringType(),989,0.26,"['prioughtought', 'antiablepri', 'n stcally', 'prieingcally', 'callyprianti']",item,18000
+i_size,StringType(),8,0.31,"['N/A', 'large', 'medium', 'small', 'extra large']",item,18000
+i_formulation,StringType(),13444,0.26,"['5357922029965drab316', 'cornsilk619514408573', '860wheat227691609429', '9navajo6733308223729', '03445saddle064206076']",item,18000
+i_color,StringType(),93,0.25,"['puff', 'midnight', 'plum', 'antique', 'powder']",item,18000
+i_units,StringType(),22,0.28,"['Tsp', 'Bundle', 'Bunch', 'Cup', 'Oz']",item,18000
+i_container,StringType(),2,0.28,['Unknown'],item,18000
+i_manager_id,IntegerType(),101,0.3,[],item,18000
+i_product_name,StringType(),17949,0.29,"['ought', 'able', 'pri', 'ese', 'anti']",item,18000
+p_promo_sk,IntegerType(),300,0.0,[],promotion,300
+p_promo_id,StringType(),300,0.0,"['AAAAAAAABAAAAAAA', 'AAAAAAAACAAAAAAA', 'AAAAAAAADAAAAAAA', 'AAAAAAAAEAAAAAAA', 'AAAAAAAAFAAAAAAA']",promotion,300
+p_start_date_sk,IntegerType(),245,1.67,[],promotion,300
+p_end_date_sk,IntegerType(),257,0.67,[],promotion,300
+p_item_sk,IntegerType(),293,1.33,[],promotion,300
+p_cost,"DecimalType(15,2)",2,1.0,['1000.00'],promotion,300
+p_response_target,IntegerType(),2,1.33,['1'],promotion,300
+p_promo_name,StringType(),11,1.33,"['ought', 'able', 'pri', 'ese', 'anti']",promotion,300
+p_channel_dmail,StringType(),2,0.0,"['N', 'Y']",promotion,300
+p_channel_email,StringType(),2,0.67,['N'],promotion,300
+p_channel_catalog,StringType(),2,1.33,['N'],promotion,300
+p_channel_tv,StringType(),2,1.0,['N'],promotion,300
+p_channel_radio,StringType(),2,1.33,['N'],promotion,300
+p_channel_press,StringType(),2,0.67,['N'],promotion,300
+p_channel_event,StringType(),2,1.33,['N'],promotion,300
+p_channel_demo,StringType(),2,0.67,['N'],promotion,300
+p_channel_details,StringType(),300,0.33,"['Early, right courses could a', 'General members hold much in the demands.', 'Expected, extreme bonds may w', 'Considerable, powerful eyes leave. Men may create; in ', 'Clear, clear styles advise apart with']",promotion,300
+p_purpose,StringType(),2,2.0,['Unknown'],promotion,300
+p_discount_active,StringType(),2,0.67,['N'],promotion,300
+r_reason_sk,IntegerType(),35,0.0,"['1', '2', '3', '4', '5']",reason,35
+r_reason_id,StringType(),35,0.0,"['AAAAAAAABAAAAAAA', 'AAAAAAAACAAAAAAA', 'AAAAAAAADAAAAAAA', 'AAAAAAAAEAAAAAAA', 'AAAAAAAAFAAAAAAA']",reason,35
+r_reason_desc,StringType(),34,0.0,"['Package was damaged', 'Stopped working', 'Did not get it on time', 'Not the product that was ordred', 'Parts missing']",reason,35
+sm_ship_mode_sk,IntegerType(),20,0.0,"['1', '2', '3', '4', '5']",ship_mode,20
+sm_ship_mode_id,StringType(),20,0.0,"['AAAAAAAABAAAAAAA', 'AAAAAAAACAAAAAAA', 'AAAAAAAADAAAAAAA', 'AAAAAAAAEAAAAAAA', 'AAAAAAAAFAAAAAAA']",ship_mode,20
+sm_type,StringType(),6,0.0,"['EXPRESS', 'NEXT DAY', 'OVERNIGHT', 'TWO DAY', 'LIBRARY']",ship_mode,20
+sm_code,StringType(),4,0.0,"['AIR', 'SURFACE', 'SEA', 'BIKE']",ship_mode,20
+sm_carrier,StringType(),20,0.0,"['UPS', 'FEDEX', 'AIRBORNE', 'USPS', 'DHL']",ship_mode,20
+sm_contract,StringType(),20,0.0,"['M', 'GknVHXbErdu', '7biDzDK', 'yxmpAK', 'tqPB5CKKj9LcIeN6']",ship_mode,20
+s_store_sk,IntegerType(),12,0.0,"['1', '2', '3', '4', '5']",store,12
+s_store_id,StringType(),6,0.0,"['AAAAAAAABAAAAAAA', 'AAAAAAAACAAAAAAA', 'AAAAAAAAEAAAAAAA', 'AAAAAAAAHAAAAAAA', 'AAAAAAAAIAAAAAAA']",store,12
+s_rec_start_date,DateType(),4,0.0,"['1997-03-13', '2000-03-13', '1999-03-14', '2001-03-13']",store,12
+s_rec_end_date,DateType(),4,50.0,"['2000-03-12', '1999-03-13', '2001-03-12']",store,12
+s_closed_date_sk,IntegerType(),2,91.67,['2451065'],store,12
+s_store_name,StringType(),7,0.0,"['ought', 'able', 'ese', 'ation', 'eing']",store,12
+s_number_employees,IntegerType(),7,0.0,"['211', '264', '217', '286', '239']",store,12
+s_floor_space,IntegerType(),8,0.0,"['6522265', '5529610', '6070190', '6620891', '8597567']",store,12
+s_hours,StringType(),3,0.0,"['8AM-4PM', '8AM-8AM', '8AM-12AM']",store,12
+s_manager,StringType(),9,0.0,"['Jimmy Allen', 'Jimmy Bullock', 'Floyd Christian', 'James Lachance', 'Joaquin Washington']",store,12
+s_market_id,IntegerType(),5,0.0,"['7', '3', '2', '5', '10']",store,12
+s_geography_class,StringType(),1,0.0,['Unknown'],store,12
+s_market_desc,StringType(),12,0.0,"['Notes cannot engage pupils. No doubt substan', 'Originally simple assumptions move important, good t', 'Countries bear for a conditions. Streets must not put high still following inches. Er', 'Hills result public refugees. Russian quest', 'Hours must protect more problems. Yet short-term levels challenge then political, young ye']",store,12
+s_market_manager,StringType(),7,0.0,"['Randy Valdez', 'Robert Dyer', 'Ryan Harvey', 'Thomas Meadows', 'James Adams']",store,12
+s_division_id,IntegerType(),1,0.0,['1'],store,12
+s_division_name,StringType(),1,0.0,['Unknown'],store,12
+s_company_id,IntegerType(),1,0.0,['1'],store,12
+s_company_name,StringType(),1,0.0,['Unknown'],store,12
+s_street_number,StringType(),8,0.0,"['32', '666', '120', '917', '405']",store,12
+s_street_name,StringType(),11,0.0,"['3rd ', 'Cedar Spruce', '8th ', '6th ', '9th 12th']",store,12
+s_street_type,StringType(),10,0.0,"['Street', 'Avenue', 'Drive', 'Lane', 'Pkwy']",store,12
+s_suite_number,StringType(),9,0.0,"['Suite 220', 'Suite 10', 'Suite G', 'Suite B', 'Suite 150']",store,12
+s_city,StringType(),2,0.0,"['Midway', 'Fairview']",store,12
+s_county,StringType(),1,0.0,['Williamson County'],store,12
+s_state,StringType(),1,0.0,['TN'],store,12
+s_zip,StringType(),2,0.0,"['31904', '35709']",store,12
+s_country,StringType(),1,0.0,['United States'],store,12
+s_gmt_offset,"DecimalType(5,2)",1,0.0,['-5.00'],store,12
+s_tax_precentage,"DecimalType(5,2)",5,0.0,"['0.07', '0.04', '0.00', '0.06', '0.08']",store,12
+sr_returned_date_sk,IntegerType(),2002,3.5,[],store_returns,288279
+sr_return_time_sk,IntegerType(),32397,3.45,[],store_returns,288279
+sr_item_sk,IntegerType(),17993,0.0,[],store_returns,288279
+sr_customer_sk,IntegerType(),87026,3.48,[],store_returns,288279
+sr_cdemo_sk,IntegerType(),259000,3.48,[],store_returns,288279
+sr_hdemo_sk,IntegerType(),7201,3.5,[],store_returns,288279
+sr_addr_sk,IntegerType(),49807,3.47,[],store_returns,288279
+sr_store_sk,IntegerType(),7,3.42,"['1', '2', '7', '8', '10']",store_returns,288279
+sr_reason_sk,IntegerType(),36,3.53,"['34', '13', '9', '33', '31']",store_returns,288279
+sr_ticket_number,LongType(),169998,0.0,[],store_returns,288279
+sr_return_quantity,IntegerType(),101,3.47,[],store_returns,288279
+sr_return_amt,"DecimalType(7,2)",113971,3.48,[],store_returns,288279
+sr_return_tax,"DecimalType(7,2)",29131,3.49,[],store_returns,288279
+sr_return_amt_inc_tax,"DecimalType(7,2)",141855,3.49,[],store_returns,288279
+sr_fee,"DecimalType(7,2)",9952,3.51,[],store_returns,288279
+sr_return_ship_cost,"DecimalType(7,2)",82177,3.47,[],store_returns,288279
+sr_refunded_cash,"DecimalType(7,2)",102115,3.48,[],store_returns,288279
+sr_reversed_charge,"DecimalType(7,2)",73314,3.47,[],store_returns,288279
+sr_store_credit,"DecimalType(7,2)",72304,3.49,[],store_returns,288279
+sr_net_loss,"DecimalType(7,2)",118654,3.47,[],store_returns,288279
+ss_sold_date_sk,IntegerType(),1824,4.48,[],store_sales,2879789
+ss_sold_time_sk,IntegerType(),45669,4.5,[],store_sales,2879789
+ss_item_sk,IntegerType(),18000,0.0,[],store_sales,2879789
+ss_customer_sk,IntegerType(),90899,4.51,[],store_sales,2879789
+ss_cdemo_sk,IntegerType(),225605,4.51,[],store_sales,2879789
+ss_hdemo_sk,IntegerType(),7201,4.49,[],store_sales,2879789
+ss_addr_sk,IntegerType(),49607,4.48,[],store_sales,2879789
+ss_store_sk,IntegerType(),7,4.48,"['1', '4', '2', '8', '7']",store_sales,2879789
+ss_promo_sk,IntegerType(),301,4.48,[],store_sales,2879789
+ss_ticket_number,LongType(),240000,0.0,[],store_sales,2879789
+ss_quantity,IntegerType(),101,4.5,[],store_sales,2879789
+ss_wholesale_cost,"DecimalType(7,2)",9902,4.5,[],store_sales,2879789
+ss_list_price,"DecimalType(7,2)",19728,4.5,[],store_sales,2879789
+ss_sales_price,"DecimalType(7,2)",18692,4.49,[],store_sales,2879789
+ss_ext_discount_amt,"DecimalType(7,2)",209754,4.5,[],store_sales,2879789
+ss_ext_sales_price,"DecimalType(7,2)",411591,4.48,[],store_sales,2879789
+ss_ext_wholesale_cost,"DecimalType(7,2)",380901,4.49,[],store_sales,2879789
+ss_ext_list_price,"DecimalType(7,2)",578765,4.48,[],store_sales,2879789
+ss_ext_tax,"DecimalType(7,2)",78619,4.48,[],store_sales,2879789
+ss_coupon_amt,"DecimalType(7,2)",209754,4.5,[],store_sales,2879789
+ss_net_paid,"DecimalType(7,2)",463524,4.5,[],store_sales,2879789
+ss_net_paid_inc_tax,"DecimalType(7,2)",617795,4.5,[],store_sales,2879789
+ss_net_profit,"DecimalType(7,2)",566167,4.48,[],store_sales,2879789
+t_time_sk,IntegerType(),86400,0.0,[],time_dim,86400
+t_time_id,StringType(),86400,0.0,"['AAAAAAAABAAAAAAA', 'AAAAAAAACAAAAAAA', 'AAAAAAAADAAAAAAA', 'AAAAAAAAEAAAAAAA', 'AAAAAAAAFAAAAAAA']",time_dim,86400
+t_time,IntegerType(),86400,0.0,[],time_dim,86400
+t_hour,IntegerType(),24,0.0,"['0', '1', '2', '3', '4']",time_dim,86400
+t_minute,IntegerType(),60,0.0,[],time_dim,86400
+t_second,IntegerType(),60,0.0,[],time_dim,86400
+t_am_pm,StringType(),2,0.0,"['AM', 'PM']",time_dim,86400
+t_shift,StringType(),3,0.0,"['third', 'first', 'second']",time_dim,86400
+t_sub_shift,StringType(),4,0.0,"['night', 'morning', 'afternoon', 'evening']",time_dim,86400
+t_meal_time,StringType(),4,58.33,"['breakfast', 'lunch', 'dinner']",time_dim,86400
+w_warehouse_sk,IntegerType(),5,0.0,"['1', '2', '3', '4', '5']",warehouse,5
+w_warehouse_id,StringType(),5,0.0,"['AAAAAAAABAAAAAAA', 'AAAAAAAACAAAAAAA', 'AAAAAAAADAAAAAAA', 'AAAAAAAAEAAAAAAA', 'AAAAAAAAFAAAAAAA']",warehouse,5
+w_warehouse_name,StringType(),5,0.0,"['Significantly', 'Just good amou', 'Selective,', 'Operations', 'Matches produce']",warehouse,5
+w_warehouse_sq_ft,IntegerType(),5,0.0,"['200313', '933435', '720621', '500020', '198821']",warehouse,5
+w_street_number,StringType(),5,0.0,"['563', '11', '218', '461', '808']",warehouse,5
+w_street_name,StringType(),5,0.0,"['Dogwood ', 'Wilson Green', '3rd 6th', 'Second Johnson', '10th 11th']",warehouse,5
+w_street_type,StringType(),4,0.0,"['Ln', 'Court', 'Drive', 'Wy']",warehouse,5
+w_suite_number,StringType(),5,0.0,"['Suite S', 'Suite A', 'Suite 120', 'Suite 90', 'Suite 60']",warehouse,5
+w_city,StringType(),2,0.0,"['Fairview', 'Midway']",warehouse,5
+w_county,StringType(),1,0.0,['Williamson County'],warehouse,5
+w_state,StringType(),1,0.0,['TN'],warehouse,5
+w_zip,StringType(),2,0.0,"['35709', '31904']",warehouse,5
+w_country,StringType(),1,0.0,['United States'],warehouse,5
+w_gmt_offset,"DecimalType(5,2)",1,0.0,['-5.00'],warehouse,5
+wp_web_page_sk,IntegerType(),60,0.0,[],web_page,60
+wp_web_page_id,StringType(),30,0.0,"['AAAAAAAABAAAAAAA', 'AAAAAAAACAAAAAAA', 'AAAAAAAAEAAAAAAA', 'AAAAAAAAHAAAAAAA', 'AAAAAAAAIAAAAAAA']",web_page,60
+wp_rec_start_date,DateType(),4,0.0,"['1997-09-03', '2000-09-03', '1999-09-04', '2001-09-03']",web_page,60
+wp_rec_end_date,DateType(),4,50.0,"['2000-09-02', '1999-09-03', '2001-09-02']",web_page,60
+wp_creation_date_sk,IntegerType(),9,0.0,"['2450808', '2450809', '2450812', '2450815', '2450810']",web_page,60
+wp_access_date_sk,IntegerType(),36,0.0,"['2452553', '2452620', '2452612', '2452618', '2452599']",web_page,60
+wp_autogen_flag,StringType(),2,0.0,"['N', 'Y']",web_page,60
+wp_customer_sk,IntegerType(),16,71.67,"['41693', '60562', '49952', '54473', '63978']",web_page,60
+wp_url,StringType(),1,0.0,['http://www.foo.com'],web_page,60
+wp_type,StringType(),7,0.0,"['order', 'dynamic', 'welcome', 'ad', 'general']",web_page,60
+wp_char_count,IntegerType(),49,0.0,"['4517', '3588', '1250', '2342', '2252']",web_page,60
+wp_link_count,IntegerType(),20,0.0,"['17', '22', '7', '5', '15']",web_page,60
+wp_image_count,IntegerType(),7,0.0,"['2', '5', '4', '7', '3']",web_page,60
+wp_max_ad_count,IntegerType(),5,0.0,"['4', '0', '3', '2', '1']",web_page,60
+wr_returned_date_sk,IntegerType(),2110,4.47,[],web_returns,71772
+wr_returned_time_sk,IntegerType(),44673,4.52,[],web_returns,71772
+wr_item_sk,IntegerType(),16983,0.0,[],web_returns,71772
+wr_refunded_customer_sk,IntegerType(),49502,4.41,[],web_returns,71772
+wr_refunded_cdemo_sk,IntegerType(),67250,4.44,[],web_returns,71772
+wr_refunded_hdemo_sk,IntegerType(),7201,4.52,[],web_returns,71772
+wr_refunded_addr_sk,IntegerType(),37280,4.53,[],web_returns,71772
+wr_returning_customer_sk,IntegerType(),49422,4.55,[],web_returns,71772
+wr_returning_cdemo_sk,IntegerType(),67236,4.47,[],web_returns,71772
+wr_returning_hdemo_sk,IntegerType(),7201,4.42,[],web_returns,71772
+wr_returning_addr_sk,IntegerType(),37341,4.43,[],web_returns,71772
+wr_web_page_sk,IntegerType(),61,4.46,[],web_returns,71772
+wr_reason_sk,IntegerType(),36,4.5,"['5', '18', '4', '22', '33']",web_returns,71772
+wr_order_number,LongType(),42359,0.0,[],web_returns,71772
+wr_return_quantity,IntegerType(),101,4.38,[],web_returns,71772
+wr_return_amt,"DecimalType(7,2)",48935,4.51,[],web_returns,71772
+wr_return_tax,"DecimalType(7,2)",18373,4.35,[],web_returns,71772
+wr_return_amt_inc_tax,"DecimalType(7,2)",54993,4.44,[],web_returns,71772
+wr_fee,"DecimalType(7,2)",9942,4.54,[],web_returns,71772
+wr_return_ship_cost,"DecimalType(7,2)",40561,4.4,[],web_returns,71772
+wr_refunded_cash,"DecimalType(7,2)",44362,4.42,[],web_returns,71772
+wr_reversed_charge,"DecimalType(7,2)",34319,4.53,[],web_returns,71772
+wr_account_credit,"DecimalType(7,2)",34031,4.49,[],web_returns,71772
+wr_net_loss,"DecimalType(7,2)",51892,4.45,[],web_returns,71772
+ws_sold_date_sk,IntegerType(),1824,0.02,[],web_sales,718931
+ws_sold_time_sk,IntegerType(),40959,0.02,[],web_sales,718931
+ws_ship_date_sk,IntegerType(),1947,0.02,[],web_sales,718931
+ws_item_sk,IntegerType(),18000,0.0,[],web_sales,718931
+ws_bill_customer_sk,IntegerType(),45113,0.02,[],web_sales,718931
+ws_bill_cdemo_sk,IntegerType(),59093,0.02,[],web_sales,718931
+ws_bill_hdemo_sk,IntegerType(),7199,0.02,[],web_sales,718931
+ws_bill_addr_sk,IntegerType(),34926,0.03,[],web_sales,718931
+ws_ship_customer_sk,IntegerType(),45196,0.02,[],web_sales,718931
+ws_ship_cdemo_sk,IntegerType(),59057,0.02,[],web_sales,718931
+ws_ship_hdemo_sk,IntegerType(),7199,0.02,[],web_sales,718931
+ws_ship_addr_sk,IntegerType(),34913,0.02,[],web_sales,718931
+ws_web_page_sk,IntegerType(),61,0.02,[],web_sales,718931
+ws_web_site_sk,IntegerType(),31,0.02,"['16', '8', '25', '4', '22']",web_sales,718931
+ws_ship_mode_sk,IntegerType(),21,0.02,"['12', '16', '3', '8', '18']",web_sales,718931
+ws_warehouse_sk,IntegerType(),6,0.02,"['3', '4', '5', '1', '2']",web_sales,718931
+ws_promo_sk,IntegerType(),301,0.02,[],web_sales,718931
+ws_order_number,LongType(),60000,0.0,[],web_sales,718931
+ws_quantity,IntegerType(),101,0.03,[],web_sales,718931
+ws_wholesale_cost,"DecimalType(7,2)",9902,0.02,[],web_sales,718931
+ws_list_price,"DecimalType(7,2)",29071,0.03,[],web_sales,718931
+ws_sales_price,"DecimalType(7,2)",24629,0.02,[],web_sales,718931
+ws_ext_discount_amt,"DecimalType(7,2)",282379,0.03,[],web_sales,718931
+ws_ext_sales_price,"DecimalType(7,2)",282184,0.02,[],web_sales,718931
+ws_ext_wholesale_cost,"DecimalType(7,2)",272488,0.02,[],web_sales,718931
+ws_ext_list_price,"DecimalType(7,2)",388204,0.02,[],web_sales,718931
+ws_ext_tax,"DecimalType(7,2)",68741,0.02,[],web_sales,718931
+ws_coupon_amt,"DecimalType(7,2)",96729,0.02,[],web_sales,718931
+ws_ext_ship_cost,"DecimalType(7,2)",197397,0.02,[],web_sales,718931
+ws_net_paid,"DecimalType(7,2)",298039,0.02,[],web_sales,718931
+ws_net_paid_inc_tax,"DecimalType(7,2)",366344,0.02,[],web_sales,718931
+ws_net_paid_inc_ship,"DecimalType(7,2)",371956,0.0,[],web_sales,718931
+ws_net_paid_inc_ship_tax,"DecimalType(7,2)",460464,0.0,[],web_sales,718931
+ws_net_profit,"DecimalType(7,2)",337058,0.0,[],web_sales,718931
+web_site_sk,IntegerType(),30,0.0,"['1', '2', '3', '4', '5']",web_site,30
+web_site_id,StringType(),15,0.0,"['AAAAAAAABAAAAAAA', 'AAAAAAAACAAAAAAA', 'AAAAAAAAEAAAAAAA', 'AAAAAAAAHAAAAAAA', 'AAAAAAAAIAAAAAAA']",web_site,30
+web_rec_start_date,DateType(),4,0.0,"['1997-08-16', '2000-08-16', '1999-08-17', '2001-08-16']",web_site,30
+web_rec_end_date,DateType(),4,50.0,"['2000-08-15', '1999-08-16', '2001-08-15']",web_site,30
+web_name,StringType(),5,0.0,"['site_0', 'site_1', 'site_2', 'site_3', 'site_4']",web_site,30
+web_open_date_sk,IntegerType(),15,0.0,"['2450807', '2450798', '2450781', '2450756', '2450747']",web_site,30
+web_close_date_sk,IntegerType(),11,16.67,"['2447148', '2448956', '2448922', '2447080', '2447046']",web_site,30
+web_class,StringType(),1,0.0,['Unknown'],web_site,30
+web_manager,StringType(),20,0.0,"['John James', 'Michael Kerr', 'Raymond Finch', 'Gregory Kauffman', 'Aaron Jones']",web_site,30
+web_mkt_id,IntegerType(),6,0.0,"['2', '1', '6', '3', '5']",web_site,30
+web_mkt_class,StringType(),25,0.0,"['Nuclear, continuous results could not see also rew', 'Problems may develop also addit', 'Other patterns work some', 'Machines should help main authorities. Tas', 'Metres satisfy savings. Possible, great years m']",web_site,30
+web_mkt_desc,StringType(),24,0.0,"['Boys distinguish just pink units. Dry, environmental powers ', 'Less vast ears call then thus british pairs. Federal fingers cannot say also', 'So big operators would appreciate current, rec', 'Before electric politicians describe forward upper reactions. Shallo', 'Complex communists declare con']",web_site,30
+web_market_manager,StringType(),20,0.0,"['Victor Jackson', 'Troy Bustamante', 'James Hawthorne', 'Joe Ledesma', 'John Cruz']",web_site,30
+web_company_id,IntegerType(),6,0.0,"['3', '5', '1', '2', '4']",web_site,30
+web_company_name,StringType(),6,0.0,"['pri', 'anti', 'ought', 'able', 'ese']",web_site,30
+web_street_number,StringType(),25,0.0,"['963', '769', '898', '284', '95']",web_site,30
+web_street_name,StringType(),30,0.0,"['3rd Main', 'Maple Second', 'Woodland Maple', '13th Hickory', '12th ']",web_site,30
+web_street_type,StringType(),14,0.0,"['Road', 'Boulevard', 'Parkway', 'Drive', 'Way']",web_site,30
+web_suite_number,StringType(),23,0.0,"['Suite E', 'Suite 250', 'Suite 330', 'Suite 410', 'Suite Y']",web_site,30
+web_city,StringType(),2,0.0,"['Fairview', 'Midway']",web_site,30
+web_county,StringType(),1,0.0,['Williamson County'],web_site,30
+web_state,StringType(),1,0.0,['TN'],web_site,30
+web_zip,StringType(),2,0.0,"['35709', '31904']",web_site,30
+web_country,StringType(),1,0.0,['United States'],web_site,30
+web_gmt_offset,"DecimalType(5,2)",1,0.0,['-5.00'],web_site,30
+web_tax_percentage,"DecimalType(5,2)",9,0.0,"['0.11', '0.04', '0.06', '0.10', '0.08']",web_site,30
